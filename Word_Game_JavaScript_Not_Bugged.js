@@ -91,8 +91,6 @@ function game() {
       alert("That is an invalid answer, please reload your browser in order to restart the game.")
     }
   }
-  else if (isNull(Start)) {
-  }
   else {
     alert("Sorry, you cannot play this game due to teen content")
   }
