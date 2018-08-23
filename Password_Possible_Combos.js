@@ -20,6 +20,7 @@ function alphaNumericPasswordGenerator12Digit() {
   var alphaNumericPassword = [];
   var length = document.getElementById('Length').value;
   if (length == 0) {
+    console.log("Empty Length");
 }
   else {
     for (var j = 0; j < length; j++) {
@@ -38,6 +39,7 @@ function dynamicPassword() {
   var UltimatePassword = [];
   var length = document.getElementById('Length').value;
   if (length == 0) {
+    console.log("Empty Length");
   }
   else {
     for (var i = 0; i < length; i++) {
@@ -50,6 +52,7 @@ function numbersOnly() {
   var numbersArray = [];
   var length = document.getElementById('Length').value;
   if (length == 0) {
+    console.log("Empty Length");
   }
   else {
     for (var k = 0; k < length; k++) {
@@ -62,6 +65,7 @@ function lettersOnly() {
   var lettersArray = [];
   var length = document.getElementById('Length').value;
   if (length == 0) {
+    console.log("Empty Length");
   }
   else {
     for (var l = 0; l < length; l++) {
@@ -74,6 +78,7 @@ function specialCharactersOnly() {
   var specialCharactersArray = [];
   var length = document.getElementById('Length').value;
   if (length == 0) {
+    console.log("Empty Length");
   }
   else {
     for (var m = 0; m < length; m++) {
@@ -86,6 +91,7 @@ function numbersandSpecialCharacters() {
   var numbersandSpecialCharactersArray = [];
   var length = document.getElementById('Length').value;
   if (length == 0) {
+    console.log("Empty Length");
   }
   else {
     for (var n = 0; n < length; n++) {
@@ -98,6 +104,7 @@ function lettersandSpecialCharacters() {
   var lettersandSpecialCharactersArray = [];
   var length = document.getElementById('Length').value;
   if (length == 0) {
+    console.log("Empty Length");
   }
   else {
     for (var o = 0; o < length; o++) {
@@ -128,7 +135,5 @@ function frn() {
   }
   else if (document.getElementById('Numbers').checked == false && document.getElementById('Special_Characters').checked && document.getElementById('Letters').checked) {
     lettersandSpecialCharacters();
-  }
-  else {
   }
 }
