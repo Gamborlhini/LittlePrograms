@@ -4,7 +4,7 @@ function tipCalc() {
   if (isNaN(rating)) {
     alert("You didn't enter an integer!");
   }
-  else {
+  else if (rating<=100&&rating>0) {
     var onePercentCOM = costofMeal/100;
     var rounded = Math.ceil(onePercentCOM*100)/100;
     var tip = Number(rounded*rating);
