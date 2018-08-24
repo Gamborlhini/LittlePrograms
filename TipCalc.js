@@ -12,4 +12,8 @@ function tipCalc() {
     alert("Your tip is $" + tip);
     alert("The total cost of your meal is $" + totalCost);
   }
+  else {
+    alert("Whoops, something went wrong, the devs will be coming around soon!");
+    console.error("tipCalc went wrong")
+  }
 }
