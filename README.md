@@ -1,2 +1,2 @@
 # Website_Test
-This is basically a repo so I can publish a bunch of random stuff that I thought might be useful
+If you are seeing this message instead of my usual website, it means that this website is currently under construction, please check back later.
