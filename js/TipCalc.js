@@ -1,8 +1,8 @@
 function tipCalc() {
   var costofMeal = Number(prompt("What was the cost of your meal?"));
   var rating = Number(prompt("What percent tip do you want to give?"));
-  if (isNaN(rating)) {
-    alert("You didn't enter an integer!");
+  if (isNaN(rating)||costofMeal<=0||rating<=0) {
+    alert("You didn't enter a valid number (hint, don't put the percentage sign after the tip percent, its already been included)");
   }
   else if (rating<=100&&rating>0) {
     var onePercentCOM = costofMeal/100;
