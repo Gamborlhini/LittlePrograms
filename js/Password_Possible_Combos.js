@@ -22,6 +22,36 @@ function alphaNumericPasswordGenerator12Digit() {
   if (length == 0) {
     console.log("Empty Length");
 }
+function validatePassword() {
+    var p = document.getElementById('Length').value,
+        errors = [];
+    if (p.length < 4) {
+        errors.push("Your password must be at least 4 characters");
+    }
+    if (p.search(/[a-z]/i) < 0) {
+        errors.push("Your password must contain at least one letter.");
+    }
+    if (p.search(/[0-9]/) < 0) {
+        errors.push("Your password must contain at least one digit.");
+    }
+    if (p.search(/[A-Z]/) < 0) {
+      errors.push("Your password must contain at least one uppercase letter.")
+    }
+    if (p.search(/.*[!@#$%^&*() =+_-]/) < 0) {
+      errors.push("Your password must contain at least one uppercase letter.")
+    }
+    if (errors.length > 0) {
+        alert(errors.join("\n"));
+        return false;
+    }
+    else {
+      frn();
+    }
+    return true;
+}
+else if (length <= 3) {
+  alert("Your password must be at least 4 digits long");
+}
   else {
     for (var j = 0; j < length; j++) {
       alphaNumericPassword.push(alphanumericpassword[Math.floor(Math.random()*72)]);
