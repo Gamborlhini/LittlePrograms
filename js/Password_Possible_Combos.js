@@ -44,7 +44,7 @@ function validatePassword() {
         alert(errors.join("\n"));
         return false;
     }
-    else {
+    else if (errors.length = 0) {
       frn();
     }
     return true;
