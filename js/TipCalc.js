@@ -13,6 +13,7 @@ function tipCalc() {
     var tip = Number(rounded*rating);
     var totalCost = tip+costofMeal;
     totalCost = financial(totalCost);
+    tip = financial(tip);
     alert("Your tip is $" + tip);
     alert("The total cost of your meal is $" + totalCost);
   }
