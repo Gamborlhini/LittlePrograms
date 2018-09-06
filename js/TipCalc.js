@@ -9,6 +9,9 @@ function tipCalc() {
     var rounded = Math.ceil(onePercentCOM*100)/100;
     var tip = Number(rounded*rating);
     var totalCost = tip+costofMeal;
+    totalCost = totalCost*100;
+    totalCost = Math.ceil(totalCost);
+    totalCost = totalCost/100;
     alert("Your tip is $" + tip);
     alert("The total cost of your meal is $" + totalCost);
   }
