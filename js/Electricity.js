@@ -23,12 +23,17 @@ function findEquivelentResistance(){
   if (seriesorParallel == "series" || seriesorParallel == "Series") {
     var resistorsSeries = 0;
     var amountofResistorsSeries = prompt("How many resistors do you have?");
+    if (amountofResistorsSeries>0&&amountofResistorsSeries%1===0) {
     for (var j = 0; j < amountofResistorsSeries; j++) {
       jPlusOne = j+1;
       amountofResistorsSeries[i]
       resistorsSeries += Number(prompt("What is the value of resistor number " + jPlusOne));
     }
     alert(resistorsSeries);
+    }
+    else{
+    alert("You entered an invalid number");
+    }
   }
   else if (seriesorParallel == "parallel" || seriesorParallel == "Parallel") {
     var resistorsParallel =0;
