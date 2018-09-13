@@ -1,27 +1,27 @@
 function rollad100() {
-  alert("You got " + Math.ceil(Math.random()*100))
+  alert("You got " + random(1,101))
 }
 function rollad20() {
-alert("You got " + Math.ceil(Math.random()*20));
+alert("You got " + random(1,21));
 }
 function rollad12() {
-  alert("You got " + Math.ceil(Math.random()*12));
+  alert("You got " + random(1,13));
 }
 function rollad10() {
-  alert("You got " + Math.ceil(Math.random()*10));
+  alert("You got " + random(1,11));
 }
 function rollad8() {
-  alert("You got " + Math.ceil(Math.random()*8));
+  alert("You got " + random(1,9));
 }
 function rollad6() {
-  alert("You got " + Math.ceil(Math.random()*6));
+  alert("You got " + random(1,7));
 }
 function rollad4() {
-  alert("You got " + Math.ceil(Math.random()*4));
+  alert("You got " + random(1,5));
 }
 function flipaCoin() {
   var random = Math.random();
-  if (Math.random() > .5) {
+  if (random(1,51) > 50) {
     alert("You got heads!");
 }
   else {
