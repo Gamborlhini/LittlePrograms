@@ -1,23 +1,31 @@
+var d100, d20, d12, d10, d8, d6, d4;
 function rollad100() {
-  alert("You got " + random(1,101))
+  d100 = random(1, 101);
+  alert("You got " + d100)
 }
 function rollad20() {
-alert("You got " + random(1,21));
+  d20 = random(1,21);
+alert("You got " + d20);
 }
 function rollad12() {
-  alert("You got " + random(1,13));
+  d12 = random(1,13);
+  alert("You got " + d12);
 }
 function rollad10() {
-  alert("You got " + random(1,11));
+  d10 = random(1,11)
+  alert("You got " + d10);
 }
 function rollad8() {
-  alert("You got " + random(1,9));
+  random(1,9);
+  alert("You got " + d8);
 }
 function rollad6() {
-  alert("You got " + random(1,7));
+  random(1,7);
+  alert("You got " + d6);
 }
 function rollad4() {
-  alert("You got " + random(1,5));
+  random(1,5)
+  alert("You got " + d4);
 }
 function flipaCoin() {
   var random = Math.random();
