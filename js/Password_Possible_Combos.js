@@ -21,7 +21,16 @@ function alphaNumericPasswordGenerator12Digit() {
   var length = document.getElementById('Length').value;
   if (length == 0) {
     console.log("Empty Length");
-}
+  }
+  else if (length <= 3) {
+  alert("Your password must be at least 4 digits long");
+  }
+  else {
+    for (var j = 0; j < length; j++) {
+      alphaNumericPassword.push(alphanumericpassword[Math.floor(Math.random()*72)]);
+    }
+    document.getElementById('output').innerHTML = alphaNumericPassword.join("");
+  }
 function validatePassword() {
     var p = document.getElementById('Length').value,
         errors = [];
@@ -48,15 +57,6 @@ function validatePassword() {
       frn();
     }
     return true;
-}
-else if (length <= 3) {
-  alert("Your password must be at least 4 digits long");
-}
-  else {
-    for (var j = 0; j < length; j++) {
-      alphaNumericPassword.push(alphanumericpassword[Math.floor(Math.random()*72)]);
-    }
-    document.getElementById('output').innerHTML = alphaNumericPassword.join("");
   }
 }
 function possibleCombos() {
