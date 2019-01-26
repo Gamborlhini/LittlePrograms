@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <style media="screen">
+    .mySlides {display:none;}
+    </style>
+  <link rel="stylesheet" href="css/master.css">
+  <meta charset="utf-8">
+  <title>LittlePrograms</title>
+  <div class="w3-bar w3-black">
+    <a href="index.html" class="w3-bar-item w3-button w3-mobile">Home</a>
+    <div class="w3-dropdown-hover w3-mobile">
+      <button class="w3-button">Experimental</button>
+      <div class="w3-dropdown-content w3-bar-block w3-border">
+        <a href="#" class="w3-bar-item w3-button">Password Generator</a>
+        <a href="#" class="w3-bar-item w3-button">Example for Local Cache</a>
+      </div>
+    </div>
+    <div class="w3-dropdown-hover w3-mobile">
+      <button class="w3-button">Tools</button>
+      <div class="w3-dropdown-content w3-bar-block w3-border">
+        <a href="#" class="w3-bar-item w3-button w3-mobile">Electrical Formulas</a>
+        <a href="#" class="w3-bar-item w3-button w3-mobile">Geometric Formulas</a>
+        <a href="#" class="w3-bar-item w3-button w3-mobile">Dice Roller</a>
+        <a href="#" class="w3-bar-item w3-button w3-mobile">8 Ball</a>
+        <a href="#" class="w3-bar-item w3-button w3-mobile">Tip Calculator</a>
+      </div>
+    </div>
+  </div>
+</head>
+
+<body>
+<!--  <div class="w3-content w3-section" style="max-width:500p w3-mobile">
+    <img src="images/One.jpg" alt="Error 404 File not Found" class="mySlides responsive" style="width:100%">
+    <img src="images/Two.jpg" alt="Error 404 File not Found" class="mySlides responsive" style="width:100%">
+    <img src="images/Three.jpg" alt="Error 404 File not Found" class="mySlides responsive" style="width:100%">
+    <img src="images/Four.jpg" alt="Error 404 File not Found" class="mySlides responsive" style="width:100%">
+    <img src="images/Five.jpg" alt="Error 404 File not Found" class="mySlides responsive" style="width:100%">
+    <img src="images/Six.jpg" alt="Error 404 File not Found" class="mySlides responsive" style="width:100%">
+    <img src="images/Seven.jpg" alt="Error 404 File not Found" class="mySlides responsive" style="width:100%">
+    <img src="images/Eight.jpg" alt="Error 404 File not Found" class="mySlides responsive" style="width:100%">
+    <img src="images/Nine.jpg" alt="Error 404 File not Found" class="mySlides responsive" style="width:100%">
+    <img src="images/Ten.jpg" alt="Error 404 File not Found" class="mySlides responsive" style="width:100%">
+    <img src="images/Eleven.jpg" alt="Error 404 File not Found" class="mySlides responsive" style="width:100%">
+    <img src="images/Twelve.jpg" alt="Error 404 File not Found" class="mySlides responsive" style="width:100%">
+  </div>-->
+
+  <script type="text/javascript">
+    var myIndex = 0;
+    carousel();
+
+    function carousel() {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      myIndex++;
+      if (myIndex > x.length) {
+        myIndex = 1
+      }
+      x[myIndex - 1].style.display = "block";
+      setTimeout(carousel, 2000); // Change image every 2 seconds
+    }
+  </script>
+</body>
+
+</html>
