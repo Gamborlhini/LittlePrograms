@@ -19,7 +19,7 @@ function game() {
         }
         else if (travelorAlone === "alone") {
           alert("You sit back down in your seat and you wait until the cart with food on it comes around. You buy a little sandwich and start eating away. A police officer starts running down the train towards you.");
-          prompt("Do you 'remain' in your seat, or do you 'get' out of your se");
+          prompt("Do you 'remain' in your seat, or do you 'get' out of your seat");
         }
         else {
           alert("That is an invalid answer");
