@@ -28,9 +28,40 @@
       </div>
     </div>
   </div>
+  <style media="screen">
+  #isItLoaded {
+    display: none;
+  }
+  #loading {
+    z-index: 10;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 90vh;
+  }
+  </style>
+  <script>
+  $(window).load(function() {
+    console.log("talking");
+fetch('my_fetch_url') {
+        if (response.status != 200) {
+          window.alert("oopsie daisy, you done messed up!");
+          return;
+        }
+response.json().then(function(data) {
+          let api = data;
+          let isItLoaded = document.getElementById('isItLoaded');
+          isItLoaded.value = api[0].book_title;
+  </script>
 </head>
 
 <body>
+  <div id="content">
+    <div id="loading"></div>
+    <div id="isItLoaded"></div>
+    </div>
 <div class="w3-content w3-section" style="max-width:500p"class="w3-mobile">
     <img src="images/One.JPG" alt="Error 404 File not Found" class="mySlides responsive" style="width:100%">
     <img src="images/Two.JPG" alt="Error 404 File not Found" class="mySlides responsive" style="width:100%">
