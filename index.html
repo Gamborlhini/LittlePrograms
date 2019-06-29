@@ -1,69 +1,46 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html>
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-125543145-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-<head>
-  <style media="screen">
-    .mySlides {display:none;}
-    </style>
-  <link rel="stylesheet" href="css/master.css">
-  <meta charset="utf-8">
-  <title>LittlePrograms</title>
-  <div class="w3-bar w3-black">
-    <a href="index.html" class="w3-bar-item w3-button w3-mobile">Home</a>
-    <div class="w3-dropdown-hover w3-mobile">
-      <button class="w3-button">Experimental</button>
-      <div class="w3-dropdown-content w3-bar-block w3-border">
-        <a href="#" class="w3-bar-item w3-button">Password Generator</a>
-        <a href="#" class="w3-bar-item w3-button">Example for Local Cache</a>
-      </div>
-    </div>
-    <div class="w3-dropdown-hover w3-mobile">
-      <button class="w3-button">Tools</button>
-      <div class="w3-dropdown-content w3-bar-block w3-border">
-        <a href="#" class="w3-bar-item w3-button w3-mobile">Electrical Formulas</a>
-        <a href="#" class="w3-bar-item w3-button w3-mobile">Geometric Formulas</a>
-        <a href="#" class="w3-bar-item w3-button w3-mobile">Dice Roller</a>
-        <a href="#" class="w3-bar-item w3-button w3-mobile">8 Ball</a>
-        <a href="#" class="w3-bar-item w3-button w3-mobile">Tip Calculator</a>
-      </div>
-    </div>
-  </div>
-</head>
+  gtag('config', 'UA-125543145-1');
+</script>
 
-<body>
-  <div class="w3-content w3-section" style="max-width:500p" class="w3-mobile">
-    <img src="images/One.JPG" alt="Error 404 File not Found" class="mySlides responsive" style="width:100%">
-    <img src="images/Two.JPG" alt="Error 404 File not Found" class="mySlides responsive" style="width:100%">
-    <img src="images/Three.JPG" alt="Error 404 File not Found" class="mySlides responsive" style="width:100%">
-    <img src="images/Four.JPG" alt="Error 404 File not Found" class="mySlides responsive" style="width:100%">
-    <img src="images/Five.JPG" alt="Error 404 File not Found" class="mySlides responsive" style="width:100%">
-    <img src="images/Six.JPG" alt="Error 404 File not Found" class="mySlides responsive" style="width:100%">
-    <img src="images/Seven.JPG" alt="Error 404 File not Found" class="mySlides responsive" style="width:100%">
-    <img src="images/Eight.JPG" alt="Error 404 File not Found" class="mySlides responsive" style="width:100%">
-    <img src="images/Nine.JPG" alt="Error 404 File not Found" class="mySlides responsive" style="width:100%">
-    <img src="images/Ten.JPG" alt="Error 404 File not Found" class="mySlides responsive" style="width:100%">
-    <img src="images/Eleven.JPG" alt="Error 404 File not Found" class="mySlides responsive" style="width:100%">
-    <img src="images/Twelve.JPG" alt="Error 404 File not Found" class="mySlides responsive" style="width:100%">
-  </div>
-
-  <script type="text/javascript">
-    var myIndex = 0;
-    carousel();
-
-    function carousel() {
-      var i;
-      var x = document.getElementsByClassName("mySlides");
-      for (i = 0; i < x.length; i++) {
-        x[i].style.display = "none";
-      }
-      myIndex++;
-      if (myIndex > x.length) {
-        myIndex = 1
-      }
-      x[myIndex - 1].style.display = "block";
-      setTimeout(carousel, 2000); // Change image every 2 seconds
-    }
-  </script>
-</body>
-
+    <link rel="icon" href="Imgs/Icon.png">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LittlePrograms</title>
+    <link rel="stylesheet" type="text/css" href="css/Password_Possible_Combos.css">
+    <img src="Imgs/Logo.png" alt="" class="center">
+    <script type="text/javascript" src="js/Password_Possible_Combos.js">
+    </script>
+    <script type="text/javascript" src="js/eight_Ball.js">
+    </script>
+    <script type="text/javascript" src="js/TipCalc.js">
+    </script>
+    <script type="text/javascript" src="js/Word_Game_JavaScript_Not_Bugged.js">
+    </script>
+    <script type="text/javascript" src="js/Secert_Room.js">
+    </script>
+    <script type="text/javascript" src="js/Mean.js">
+    </script>
+    <script type="text/javascript" src="js/mainHotel">
+    </script>
+    <a href="html/Experimental.html"><button class="button">Experimental</button></a>
+    <a href="html/Electricity.html"><button class="button">Electrical Formulas</button></a>
+    <a href="html/Geometry.html"><button class="button">Geometric Formulas</button></a>
+    <a href="html/Dice_Rolling.html"><button class="button">Dice Roller</button></a>
+    <!--<a href="html/Password.html"><button class="button">Password Generator</button></a>-->
+    <button class="button" onclick="eightBall();">8 Ball</button>
+    <button class="button" onclick="tipCalc();">Tip Calculator</button>
+    <p class="p">The Password Generator is currently under construction, we will be fixing a bug that sometimes resulted in users' generated password not meeting all of the criteria they requested. Sorry for the inconvenience. If you really want to access the file, you can go to our "Experimental Page" and test it out.</p>
+    <!--<button class="button" onclick="game();">RPG</button>-->
+  </head>
+  <body class="body">
+  </body>
 </html>
