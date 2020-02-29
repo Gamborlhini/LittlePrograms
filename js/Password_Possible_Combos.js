@@ -53,7 +53,7 @@ function validatePassword() {
         alert(errors.join("\n"));
         return false;
     }
-    else if (errors.length = 0) {
+    else if (errors.length == 0) {
       frn();
     }
     return true;
